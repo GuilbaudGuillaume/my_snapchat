@@ -1,0 +1,21 @@
+<div class='appareil'>
+	<img src="img/icon.png" width="40" ng-controller='Photo' ng-click='getPhoto()'/>
+<img class="contact" src="img/avatar.png" width="30" 
+	ng-click='liste()'/>
+</div>
+
+<img class="snap" src="" width="60%"/>
+
+
+<div class="hello">
+	<p>Your friends :</p>
+	<p ng-repeat="value in resultat">
+	</p>
+
+<select>
+  <option ng-repeat="value in resultat" value="{{value.id}}">
+  {{value.username}}
+</option>
+</select>
+  <button ng-click='envoie(value.id)'>Send</button>
+</div>
